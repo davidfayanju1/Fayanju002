@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-<html lan="eng">
+<html>
 <head>
-    <title>My Personal Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>QUIZ GAME</title>
+    <link rel="stylesheet" href=style.css>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="First">
-        <img src="Bayo.jpeg">
-        <h4>Fayanju, Adebayo David</h4>
-    </div>
-    <div class="Second">
-        <h3>Bio-Data</h3>
-        <p><b>Name:</b>Fayanju,Adebayo David</p>
-        <p><b>State Of Origin:</b>Ondo State</p>
-        <p><b>DOB:</b>January 28, 1997</p>
-        <p><b>Hometown:</b>Iju</p>
-        <p><b>Address:</b>2,comondore otiko street okuta Elerinla Estate, Akure, Ondo State</p>
-        <p><b>Occupation:</b>Aspiring Front-End Developer</p>
-        <p><b>Slack ID:</b>Bayo 1</P>
-        <h3>About Me</h3>
-        <p>I'm a goal oriented and result driven individual that's ready to understand the concept of web development,<br>
-        I'm a lover of art, football and gaming amongst other things, a biochemist by degree, an artist from the heart<br>
-        an introvert that lives on his system and phone(not usually online, mostly books) and a lover of nature.</p>
-        <h3>Interest & Hobbies</h3>
-        <p>Tech, Football(plus gaming), coding and reading</p>
-        <h3>Contact Me</h3>
-        <form>
-        <div>
-            <label>Name</label>
-            <br>
-            <input type="text" name="name" placeholder="Name">
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+                <button class="btn">Answer 5</button>
+            </div>   
         </div>
-        <br>
-        <div>
-            <label>Email</label>
-            <br>
-            <input type="text" name="Email" placeholder="Email">
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
-        <br>
-        <div>
-            <label>Message</label>
-            <br>
-            <textarea name="Message"></textarea>
-    </div>
+    </div>    
 </body>
 </html>
